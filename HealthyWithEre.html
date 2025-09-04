@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthy with Ere</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="tailwind.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- fontawesome 4.7.0  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <!-- Not Responsive! -->
-  <body class="bg-white">
+  <!-- Responsiveness in session -->
+  <body class="bg-white p-3 lg:p-0">
     <!-- Navbar -->
     <div class="w-full font-sans text-gray-900">
+      <!-- desktop navigation  -->
       <nav
-        class="flex items-center justify-between px-24 py-8 max-w-screen-xl mx-auto"
+        class="hidden lg:flex items-center justify-between px-24 py-8 max-w-screen-xl mx-auto"
       >
         <a href="HealthyWithEre.html" class="text-4xl font-bold tracking-wide"
           >HealthyWith<span class="text-purple-600">Ere</span></a
@@ -43,17 +51,32 @@
           Get Started
         </button>
       </nav>
+
+      <!-- mobile nav  -->
+      <nav class="flex lg:hidden justify-between items-center">
+        <!-- logo  -->
+        <a
+          href="HealthyWithEre.html"
+          class="text-2xl md:text-3xl font-bold tracking-wide"
+          >HealthyWith<span class="text-purple-600">Ere</span></a
+        >
+
+        <!-- menu button  -->
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </nav>
     </div>
 
     <!-- Hero Section -->
-    <section class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-      <div class="p-[90px]">
-        <p class="text-purple-600 mb-[10px]">100% Fresh and Healthy</p>
-        <h1 class="text-4xl mb-[20px] font-semibold">
-          Healthy Lifestyle is your only <br />
-          <span class="text-purple-600">unfair advantage</span>
+    <section class="grid md:grid-cols-2 items-center lg:max-w-[90vw] mx-auto">
+      <div class="">
+        <p class="text-purple-600 mb-[10px] mt-10 lg:mt-0">
+          100% Fresh and Healthy
+        </p>
+        <h1 class="text-4xl mb-[20px] font-semibold max-w-lg">
+          Healthy Lifestyle is your only
+          <span class="text-purple-600 block">unfair advantage</span>
         </h1>
-        <p class="mb-[20px] w-[500px]">
+        <p class="mb-[20px] max-w-lg">
           We provide you with the best and healthy meals that will keep you
           going throughout the day. Our meals are prepared by professional chefs
           and delivered to your doorstep.
@@ -70,61 +93,71 @@
         </button>
       </div>
 
-      <div>
-        <img src="images/food.png" alt="Salad Bowl" class="mt-[50px]" data-aos="zoom-in" data-aos-duration="1500"/>
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="images/food.png"
+          alt="Salad Bowl"
+          class="mt-[50px]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        />
       </div>
     </section>
 
     <!-- Filler Section (Can't centre the images.{Updated image at the centre now.}) -->
-    <section
-      class="bg-purple-600 p-[100px] grid grid-cols-3 gap-[50px] md:grid-cols-3 items-center sm:grid-cols-1 text-center"
-    >
-      <!-- <p class="text-center text-white p-[30px] text-lg">How to order</p>   -->
-      <!-- <h2 class="text-center text-white p-[30px] font-bold text-3xl">It's as easy as this.</h2>  -->
-      <div>
-        <img
-          src="images/location.png"
-          alt="Location"
-          width="100px"
-          height="100px"
-          class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
-        />
-        <p class="text-white font-bold">Tell us where you are</p>
-        <p class="text-white">
-          We'll show you stores and restaurantd nearby you can order from.
-        </p>
-      </div>
+    <section class="bg-purple-600 text-center">
+      <p class="text-center text-white text-lg pt-8 pb-4">How to order</p>
+      <h2 class="text-center text-white font-bold text-3xl pb-4">
+        It's as easy as this.
+      </h2>
+      <div
+        class="grid gap-[50px] md:grid-cols-3 items-center lg:max-w-[90vw] mx-auto p-8"
+      >
+        <div>
+          <img
+            src="images/location.png"
+            alt="Location"
+            width="100px"
+            height="100px"
+            class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
+          />
+          <p class="text-white font-bold">Tell us where you are</p>
+          <p class="text-white">
+            We'll show you stores and restaurantd nearby you can order from.
+          </p>
+        </div>
 
-      <div>
-        <img
-          src="images/veg salad.png"
-          alt="Veg Salad"
-          width="100px"
-          height="100px"
-          class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
-        />
-        <p class="text-white font-bold">Find what you want</p>
-        <p class="text-white">
-          Search for items or dishes, businessesnor cuisines.
-        </p>
-      </div>
+        <div>
+          <img
+            src="images/veg salad.png"
+            alt="Veg Salad"
+            width="100px"
+            height="100px"
+            class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
+          />
+          <p class="text-white font-bold">Find what you want</p>
+          <p class="text-white">
+            Search for items or dishes, businessesnor cuisines.
+          </p>
+        </div>
 
-      <div>
-        <img
-          src="images/delivery-man.png"
-          alt="Delivery man"
-          width="100px"
-          height="100px"
-          class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
-        />
-        <p class="text-white font-bold">Order for delivery or collection</p>
-        <p class="text-white">We'll update you on your order's progress.</p>
+        <div>
+          <img
+            src="images/delivery-man.png"
+            alt="Delivery man"
+            width="100px"
+            height="100px"
+            class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
+          />
+          <p class="text-white font-bold">Order for delivery or collection</p>
+          <p class="text-white">We'll update you on your order's progress.</p>
+        </div>
       </div>
     </section>
 
     <!-- Menu Section -->
-    <section class="p-[100px] max-w-screen-xl mx-auto">
-      <p class="text-center mt-[10px] text-3xl font-bold">
+    <section class="lg:max-w-[90vw] mx-auto">
+      <p class="text-center mt-[10px] text-lg lg:text-3xl font-bold">
         Menu for Sep 06 - Nov 03
       </p>
       <table
@@ -142,9 +175,7 @@
         </tr>
       </table>
 
-      <div
-        class="grid grid-cols-3 gap-[30px] mt-[50px] md:grid-cols-3 sm:grid-cols-1"
-      >
+      <div class="grid gap-[30px] mt-[50px] md:grid-cols-3">
         <div
           class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
           data-aos="fade-down"
@@ -156,7 +187,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="bg-gray-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px] mt-[10px]"
+            class="bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px] mt-[10px]"
           >
             PREMIUM TWIST
           </p>
@@ -183,7 +214,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             BACK TO SCHOOL
           </p>
@@ -207,7 +238,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             A TASTE OF INDIA
           </p>
@@ -232,7 +263,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             PREMIUM TWIST
           </p>
@@ -259,7 +290,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-green-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-green-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             BESTSELLER
           </p>
@@ -284,7 +315,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             PREMIUM INGREDIENT
           </p>
@@ -311,7 +342,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-green-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-green-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             DOUBLE PROTEIN
           </p>
@@ -336,7 +367,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             PREMIUM INGREDIENT
           </p>
@@ -360,7 +391,7 @@
             class="rounded-[5px]"
           />
           <p
-            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-[140px] p-[3px] rounded-[5px]"
+            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
           >
             PREMIUM INGREDIENT
           </p>
@@ -376,8 +407,10 @@
     </section>
 
     <!-- Gift card Section -->
-    <section>
-      <div class="bg-purple-600 p-[150px] flex flex-col items-center">
+    <section class="mt-4 lg:mt-8">
+      <div
+        class="bg-purple-600 flex flex-col items-center min-h-80 justify-center"
+      >
         <h2 class="text-center text-3xl text-white font-semibold">
           Give the gift of <br />
           <span>home-cooked meals</span>
@@ -387,12 +420,12 @@
           friends
         </p>
         <button
-          class="bg-white mt-[20px] p-[10px] w-[500px] rounded-[5px] border-1 border-white cursor-pointer"
+          class="bg-white mt-[20px] p-[10px] rounded-[5px] border-1 border-white cursor-pointer"
         >
           Buy gift card
         </button>
         <button
-          class="bg-transparent mt-[20px] p-[10px] w-[500px] rounded-[5px] border-1 border-white cursor-pointer text-white"
+          class="bg-transparent mt-[20px] p-[10px] rounded-[5px] border-1 border-white cursor-pointer text-white"
         >
           Redeem gift card
         </button>
@@ -400,13 +433,15 @@
 
       <h2 class="text-center mt-[50px] font-bold text-xl">Buy a gift card</h2>
 
+
       <!-- Buy a gift card -->
       <div
+        class="grid gap-[50px] md:grid-cols-2 mt-[30px] max-w-[90vw] mx-auto"
         class="grid grid-cols-3 gap-[50px] md:grid-cols-2 sm:grid-cols-1 mt-[30px]"
       >
         <div>
           <p
-            class="p-[100px] bg-purple-600 mt-[30px] ml-[150px] w-[350px] h-[100px] rounded-[10px] text-4xl text-white font-bold pl-[30px] cursor-pointer"
+            class="bg-purple-600 mt-[30px] lg:max-w-md min-h-48 rounded-[10px] text-4xl text-white font-bold cursor-pointer flex items-center justify-center"
           >
             £36.48
           </p>
@@ -445,7 +480,7 @@
             </div>
           </div>
 
-          <ul class="list-disc mt-[20px] text-l">
+          <ul class="list-disc mt-[20px]">
             <li>£36.48 feeds 2 people with 3 meals a week</li>
             <li>
               We'll email your gift to the recipient, as well as a printable
@@ -470,7 +505,7 @@
                 name="recipient-email"
                 placeholder="Enter email address"
                 required
-                class="border-1 border-solid w-[400px] p-[10px] rounded-[5px] mt-[10px]"
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
               />
             </div>
 
@@ -483,7 +518,7 @@
                 name="sender-name"
                 placeholder="Enter your name"
                 required
-                class="border-1 border-solid w-[400px] p-[10px] rounded-[5px] mt-[10px]"
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
               />
             </div>
 
@@ -496,7 +531,7 @@
                 name="sender-email"
                 placeholder="Enter your email address"
                 required
-                class="border-1 border-solid w-[400px] p-[10px] rounded-[5px] mt-[10px]"
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
               />
             </div>
 
@@ -511,13 +546,13 @@
                 rows="4"
                 cols="50"
                 placeholder="I hope you'll enjoy this delicious gift! Happy cooking!.."
-                class="border-1 border-solid w-[400px] p-[10px] rounded-[5px] mt-[10px]"
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              class="bg-purple-600 text-white p-[10px] w-[400px] rounded-[5px] mt-[20px] cursor-pointer"
+              class="bg-purple-600 text-white p-[10px] w-full rounded-[5px] mt-[20px] cursor-pointer"
             >
               Go to checkout
             </button>
@@ -531,7 +566,7 @@
     <section class="bg-purple-600 mt-[100px]">
       <!-- <h2 class="text-center text-white font-bold">Why buy a HealthyWithEre gift card?</h2> -->
       <div
-        class="mb-[10px] grid grid-cols-3 gap-[50px] p-[100px] text-center md:grid-cols-3 sm:grid-cols-1 bg-purple-600 text-white"
+        class="mb-[10px] grid gap-[50px] p-8 lg:max-w-[90vw] mx-auto text-center md:grid-cols-3 bg-purple-600 text-white"
       >
         <div>
           <img
@@ -589,17 +624,17 @@
           autocomplete="email"
           placeholder="Email"
           required
-          class="border-1 w-[300px] rounded-[5px] p-[10px] mt-[20px]"
+          class="border-1 rounded-[5px] p-[10px] mt-[20px]"
         />
         <button
-          class="bg-purple-600 p-[10px] border-1 rounded-[5px] text-white font-bold w-[100px] cursor-pointer mt-[20px]"
+          class="bg-purple-600 p-[10px] border-1 rounded-[5px] text-white font-bold cursor-pointer mt-[20px] min-w-20"
         >
           Sign up
         </button>
       </div>
     </footer>
 
-    <p class="p-[50px] text-justify text-sm">
+    <p class="lg:max-w-[90vw] mx-auto text-justify text-sm">
       Next day delivery available to new customers when ordering your first
       HelloFresh box by noon. Recipes must be selected by the stated cut-off
       time or default meals will be sent. Available only for residents of UK,
