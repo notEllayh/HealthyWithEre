@@ -6,6 +6,7 @@
     <title>Healthy with Ere</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <!-- fontawesome 4.7.0  -->
     <link
       rel="stylesheet"
@@ -65,6 +66,18 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </nav>
     </div>
+
+    <!-- SideNav Mobile -->
+     <div class="bg-purple-600 text-white w-[250px] h-full fixed top-0 right-0 p-8 flex flex-col gap-[30px] rounded-bl-[20px] rounded-tl-[20px] shadow-lg">
+      <a href="HealthyWithEre.html" class="text-black text-xl font-bold mb-[1px] tracking-wide">HealthyWith<span class="text-white">Ere</span><i class='bx  bx-x-circle ml-[5px] text-2xl text-white'></i></a>
+      <input type="text" id="sidenavSearch" name="sidenavSearch" placeholder="Search..." class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"> 
+      <a href="HealthyWithEre.html" class="text-xl font-semibold"><i class='bx  bx-home-circle mr-[4px] text-2xl'></i>Home</a>
+      <a href="#" class="text-xl font-semibold"><i class='bx  bx-scooter-delivery mr-[4px] text-2xl'></i>Delivery</a>
+      <a href="#" class="text-xl font-semibold"><i class='bx  bx-wallet-note mr-[4px] text-2xl'></i>Pricing</a>
+      <a href="#" class="text-xl font-semibold"><i class='bx  bx-message-circle-question-mark mr-[4px] text-2xl'></i>FAQs</a>
+      <a href="#" class="text-xl font-semibold"><i class='bx  bx-headphone-mic mr-[4px] text-2xl'></i>Contact</a>
+      <button class="bg-transparent w-[160px] font-bold p-[5px] rounded-[5px] border-2 border-white cursor-pointer"></i>Get Started</button>
+     </div>
 
     <!-- Hero Section -->
     <section class="grid md:grid-cols-2 items-center lg:max-w-[90vw] mx-auto">
@@ -626,11 +639,25 @@
           required
           class="border-1 rounded-[5px] p-[10px] mt-[20px]"
         />
-        <button
+        <button id="signup-button"
           class="bg-purple-600 p-[10px] border-1 rounded-[5px] text-white font-bold cursor-pointer mt-[20px] min-w-20"
         >
           Sign up
         </button>
+
+        <!-- Sign-up Message -->
+
+        <div id="message-box" class="fixed top-8 left-1/2 -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 transition-all duration-500 transform opacity-0 scale-95 hidden">
+          <div class="flex items-center justify-between">
+            <p id="message-text" class="text-white font-semibold"></p>
+            <button id="close-button" class="ml-4 text-white opacity-70 hover:opacity-100 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -669,9 +696,11 @@
       &copy; 2024 HealthyWithEre. All rights reserved.
     </p>
 
+  
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="HealthyWithEre.js"></script>
   </body>
 </html>
