@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthyEre | Delivery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <!-- fontawesome 4.7.0  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <body>
+        <nav class="w-full h-[80px] px-8 bg-white flex items-center justify-between shadow-md">
+            <i class="fa fa-bars open-sidenav" aria-label="Open menu" aria-hidden="true" id="menu-button" aria-controls="sidenav"></i>
+            <a href="HealthyWithEre.html" class="text-4xl font-bold tracking-wide">HealthyWith<span class="text-purple-600">Ere</span></a>
+            <button class="p-2 w-[120px] bg-black text-white font-semibold border-1 rounded-[10px] ml-[300px] cursor-pointer">Login</button>
+            <button class="p-2 w-[120px] bg-purple-600 text-white font-semibold border-1 rounded-[10px] cursor-pointer">Sign up</button>
+        </nav>
+
+        <!--  
+        <aside id="sidenav" class="sidebar fixed top-0 left-0 w-64 h-full bg-purple-600 text-white shadow-2xl z-50 flex flex-col pt-16">
+        <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Menu <span><i id="close-sidenav-button" class='bx  bx-x-circle ml-[5px] text-2xl absoulte top-4 right-4 p-2 rounded-lg text-white opacity-70 hover:opacity-100 transition-opacity cursor-pointer ml-[90px]'></i></span></h2>
+        <input type="text" id="sidenavSearch" name="sidenavSearch" placeholder="Search..." class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"> 
+        <ul class="mt-6 flex flex-col gap-8">
+            <a href="HealthyWithEre.html" class="text-xl font-semibold"><i class='bx  bx-home-circle mr-[4px] text-2xl'></i>Home</a>
+            <a href="Delivery.html" class="text-xl font-semibold" target="_blank"><i class='bx  bx-scooter-delivery mr-[4px] text-2xl'></i>Delivery</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-wallet-note mr-[4px] text-2xl'></i>Pricing</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-message-circle-question-mark mr-[4px] text-2xl'></i>FAQs</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-headphone-mic mr-[4px] text-2xl'></i>Contact</a>
+           </ul>
+          </div>
+    </aside> 
+
+
+    <main class="bg-purple-600">
+        <!-- uhmmm can't add icons -->
+        <div class="w-full h-[400px] flex flex-col items-center justify-center gap-6">
+            <h2 class="text-white font-semibold text-3xl mr-[280px]">Order delivery near you</h2>
+            <span><input type="text" placeholder="Enter delivery address" class="bg-white w-[600px] font-semibold rounded-[5px] p-[10px] cursor-pointer"></span>
+            <p class="bg-white w-[600px] font-semibold rounded-[5px] p-[10px] cursor-pointer">Deliver now</p>
+            <button class="bg-black w-[600px] text-white font-semibold rounded-[5px] p-[10px] cursor-pointer">Find Food</button>
+            <p class="font-semibold mr-[530px]">Or <a href="" class="underline">Sign in</a></p>
+        </div>
+    </main>
+
+    <!-- Filler Section -->
+    <div class="mt-[50px]">
+        <div class="grid grid-cols-3 gap-4 justify-items-center p-[20px]">
+            <div>
+                <img src="Delivery page/Feed staff.webp" alt="" class="w-[400px] h-[200px] p-[5px] cursor-pointer">
+                <h2 class="text-3xl font-bold">Feed your <span class="block">employees</span></h2>
+                <a href="" class="underline">Create a busness account</a>
+            </div>
+
+             <div>
+                <img src="Delivery page/deliver to restaurant.webp" alt="" class="w-[400px] h-[200px] p-[5px] cursor-pointer">
+                <h2 class="text-3xl font-bold">Your restaurant - <span class="block">delivered</span></h2>
+                <a href="" class="underline">Add your restaurant</a>
+            </div>
+
+             <div>
+                <img src="Delivery page/Man-with-food-on-seat.webp" alt="" class="w-[400px] h-[200px] p-[5px] cursor-pointer">
+                <h2 class="text-3xl font-bold">Deliver with Ere <span class="block">Eats</span></h2>
+                <a href="" class="underline">Sign up to deliver</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map -->
+
+    <div class="mt-[50px]">
+    <h2 class="text-3xl font-bold p-[20px]">Cities near me <span><a href="" class="ml-[550px] underline text-sm font-normal">View all 500+ cities</a></span></h2>  
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.936406454623!2d-74.00601568459442!3d40.71277597933039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjIuMCJX!5e0!3m2!1sen!2sus!4v1693921123456"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy" class="w-full p-[20px] h-[500px]">
+    </iframe>
+    </div>
+
+    <!-- List of Cities -->
+    <div>
+        <div class="grid grid-cols-4 gap-10 p-[20px] ">
+            <div>
+                <h2>Aberdeen</h2>
+            </div>
+
+            <div>
+                <h2>Edinburgh</h2>
+            </div>
+
+
+            <div>
+                <h2>Manchester</h2>
+            </div>
+
+            <div>
+                <h2>Sheffield</h2>
+            </div>
+
+            <div>
+                <h2>Belfast</h2>
+            </div>
+
+            <div>
+                <h2>Glasgow</h2>
+            </div>
+
+            <div>
+                <h2>Merseyside</h2>
+            </div>
+
+            <div>
+                <h2>South coast, UK</h2>
+            </div>
+
+            <div>
+                <h2>Birmingham, UK</h2>
+            </div>
+
+            <div>
+                <h2>Hull</h2>
+            </div>
+
+
+            <div>
+                <h2>North East, UK</h2>
+            </div>
+
+
+            <div>
+                <h2>South West, UK</h2>
+            </div>
+
+            <div>
+                <h2>Brighton and Sussex</h2>
+            </div>
+
+            <div>
+                <h2>Leeds</h2>
+            </div>
+
+            <div>
+                <h2>Northampton and Milton Keynes</h2>
+            </div>
+
+            <div>
+                <h2>Stoke</h2>
+            </div>
+
+            <div>
+                <h2>Cambridge and East Anglia</h2>
+            </div>
+
+            <div>
+                <h2>Leicester</h2>
+            </div>
+
+            <div>
+                <h2>Nottingham</h2>
+            </div>
+
+            <div>
+                <h2>Cardiff</h2>
+            </div>
+
+            <div>
+                <h2>London</h2>
+            </div>
+
+            <div>
+                <h2>Oxford, UK</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- List of Countries -->
+    <div class="mt-[50px]"></div>
+    <h2 class="text-3xl font-bold p-[20px]">Countries with Ere Eats <span><a href="" class="ml-[400px] underline text-sm font-normal">View all countries</a></span></h2>
+    <div>
+        <div class="grid grid-cols-4 gap-10 p-[20px] ">
+            <div>
+                <h2>Australia</h2>
+            </div>
+
+            <div>
+                <h2>France</h2>
+            </div>
+
+
+            <div>
+                <h2>Sri Lanka</h2>
+            </div>
+
+            <div>
+                <h2>Belgium</h2>
+            </div>
+
+            <div>
+                <h2>Germany</h2>
+            </div>
+
+            <div>
+                <h2>Netherlands</h2>
+            </div>
+
+            <div>
+                <h2>Sweden</h2>
+            </div>
+
+            <div>
+                <h2>Canada</h2>
+            </div>
+
+            <div>
+                <h2>Guatemala</h2>
+            </div>
+
+            <div>
+                <h2>New Zealand</h2>
+            </div>
+
+
+            <div>
+                <h2>Switzerland</h2>
+            </div>
+
+
+            <div>
+                <h2>Chile</h2>
+            </div>
+
+            <div>
+                <h2>Ireland</h2>
+            </div>
+
+            <div>
+                <h2>Panama</h2>
+            </div>
+
+            <div>
+                <h2>Taiwan (ROC)</h2>
+            </div>
+
+            <div>
+                <h2>Costa Rica</h2>
+            </div>
+
+            <div>
+                <h2>Italy</h2>
+            </div>
+
+            <div>
+                <h2>Poland</h2>
+            </div>
+
+            <div>
+                <h2>United Kingdom</h2>
+            </div>
+
+            <div>
+                <h2>Dominican Republic</h2>
+            </div>
+
+            <div>
+                <h2>Japan</h2>
+            </div>
+
+            <div>
+                <h2>Portugal</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+     <footer>
+        <div class="bg-purple-600 text-white p-[20px] mt-[50px]">
+            <div class="grid grid-cols-3 gap-10 p-[20px] justify-items-center">
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Company</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Support</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">Safety Center</a></li>
+                        <li><a href="#" class="hover:underline">Community Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Legal</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Cookies Policy</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover:underline">Law Enforcement</a></li>
+                    </ul>
+                </div>
+     </footer>
+
+      <p class="bg-purple-600 text-center font-bold">
+      &copy; 2024 HealthyWithEre. All rights reserved.
+    </p>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="HealthyWithEre.js"></script>
+    </body>
+</html>

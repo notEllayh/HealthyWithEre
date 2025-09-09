@@ -31,10 +31,10 @@
           <li
             class="font-medium text-purple-600 cursor-pointer hover:text-black"
           >
-            <a href=""></a>Home
+            <a href="HealthyWithEre.html"></a>Home
           </li>
           <li class="cursor-pointer hover:text-purple-600 hover:font-medium">
-            <a href=""></a>Delivery
+            <a href="Delivery.html" target="_blank"></a>Delivery
           </li>
           <li class="cursor-pointer hover:text-purple-600 hover:font-medium">
             <a href=""></a>Pricing
@@ -63,21 +63,28 @@
         >
 
         <!-- menu button  -->
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </nav>
+    <i class="fa fa-bars open-sidenav" aria-label="Open menu" aria-hidden="true" id="menu-button" aria-controls="sidenav"></i>
+    </nav>
     </div>
 
     <!-- SideNav Mobile -->
-     <div class="bg-purple-600 text-white w-[250px] h-full fixed top-0 right-0 p-8 flex flex-col gap-[30px] rounded-bl-[20px] rounded-tl-[20px] shadow-lg">
-      <a href="HealthyWithEre.html" class="text-black text-xl font-bold mb-[1px] tracking-wide">HealthyWith<span class="text-white">Ere</span><i class='bx  bx-x-circle ml-[5px] text-2xl text-white'></i></a>
-      <input type="text" id="sidenavSearch" name="sidenavSearch" placeholder="Search..." class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"> 
-      <a href="HealthyWithEre.html" class="text-xl font-semibold"><i class='bx  bx-home-circle mr-[4px] text-2xl'></i>Home</a>
-      <a href="#" class="text-xl font-semibold"><i class='bx  bx-scooter-delivery mr-[4px] text-2xl'></i>Delivery</a>
-      <a href="#" class="text-xl font-semibold"><i class='bx  bx-wallet-note mr-[4px] text-2xl'></i>Pricing</a>
-      <a href="#" class="text-xl font-semibold"><i class='bx  bx-message-circle-question-mark mr-[4px] text-2xl'></i>FAQs</a>
-      <a href="#" class="text-xl font-semibold"><i class='bx  bx-headphone-mic mr-[4px] text-2xl'></i>Contact</a>
-      <button class="bg-transparent w-[160px] font-bold p-[5px] rounded-[5px] border-2 border-white cursor-pointer"></i>Get Started</button>
-     </div>
+    <aside id="sidenav" class="sidebar fixed top-0 right-0 w-64 h-full bg-purple-600 text-white shadow-2xl z-50 flex flex-col pt-16">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Menu <span><i id="close-sidenav-button" class='bx  bx-x-circle ml-[5px] text-2xl absoulte top-4 right-4 p-2 rounded-lg text-white opacity-70 hover:opacity-100 transition-opacity cursor-pointer ml-[90px]'></i></span></h2>
+        <input type="text" id="sidenavSearch" name="sidenavSearch" placeholder="Search..." class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"> 
+        <ul class="mt-6 flex flex-col gap-8">
+            <a href="HealthyWithEre.html" class="text-xl font-semibold"><i class='bx  bx-home-circle mr-[4px] text-2xl'></i>Home</a>
+            <a href="Delivery.html" class="text-xl font-semibold" target="_blank"><i class='bx  bx-scooter-delivery mr-[4px] text-2xl'></i>Delivery</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-wallet-note mr-[4px] text-2xl'></i>Pricing</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-message-circle-question-mark mr-[4px] text-2xl'></i>FAQs</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-headphone-mic mr-[4px] text-2xl'></i>Contact</a>
+           </ul>
+          </div>
+
+          <div>
+            
+          </div>
+    </aside>
 
     <!-- Hero Section -->
     <section class="grid md:grid-cols-2 items-center lg:max-w-[90vw] mx-auto">
