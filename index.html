@@ -6,7 +6,10 @@
     <title>Healthy with Ere</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- fontawesome 4.7.0  -->
     <link
       rel="stylesheet"
@@ -63,31 +66,72 @@
         >
 
         <!-- menu button  -->
-    <i class="fa fa-bars open-sidenav" aria-label="Open menu" aria-hidden="true" id="menu-button" aria-controls="sidenav"></i>
-    </nav>
+        <i
+          class="fa fa-bars open-sidenav"
+          aria-label="Open menu"
+          aria-hidden="true"
+          id="menu-button"
+          aria-controls="sidenav"
+        ></i>
+      </nav>
     </div>
 
     <!-- SideNav Mobile -->
-    <aside id="sidenav" class="sidebar fixed top-0 right-0 w-64 h-full bg-purple-600 text-white shadow-2xl z-50 flex flex-col pt-16">
+    <aside
+      id="sidenav"
+      class="sidebar fixed top-0 right-0 w-64 h-full bg-purple-600 text-white shadow-2xl z-50 flex flex-col pt-16 hidden lg:hidden"
+    >
       <div class="p-6">
-        <h2 class="text-2xl font-bold mb-4">Menu <span><i id="close-sidenav-button" class='bx  bx-x-circle ml-[5px] text-2xl absoulte top-4 right-4 p-2 rounded-lg text-white opacity-70 hover:opacity-100 transition-opacity cursor-pointer ml-[90px]'></i></span></h2>
-        <input type="text" id="sidenavSearch" name="sidenavSearch" placeholder="Search..." class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"> 
+        <h2 class="text-2xl font-bold mb-4">
+          Menu
+          <span
+            ><i
+              id="close-sidenav-button"
+              class="bx bx-x-circle ml-[5px] text-2xl absoulte top-4 right-4 p-2 rounded-lg text-white opacity-70 hover:opacity-100 transition-opacity cursor-pointer ml-[90px]"
+            ></i
+          ></span>
+        </h2>
+        <input
+          type="text"
+          id="sidenavSearch"
+          name="sidenavSearch"
+          placeholder="Search..."
+          class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"
+        />
         <ul class="mt-6 flex flex-col gap-8">
-            <a href="HealthyWithEre.html" class="text-xl font-semibold"><i class='bx  bx-home-circle mr-[4px] text-2xl'></i>Home</a>
-            <a href="Delivery.html" class="text-xl font-semibold" target="_blank"><i class='bx  bx-scooter-delivery mr-[4px] text-2xl'></i>Delivery</a>
-            <a href="#" class="text-xl font-semibold"><i class='bx  bx-wallet-note mr-[4px] text-2xl'></i>Pricing</a>
-            <a href="#" class="text-xl font-semibold"><i class='bx  bx-message-circle-question-mark mr-[4px] text-2xl'></i>FAQs</a>
-            <a href="#" class="text-xl font-semibold"><i class='bx  bx-headphone-mic mr-[4px] text-2xl'></i>Contact</a>
-           </ul>
-          </div>
+          <a
+            href="HealthyWithEre.html"
+            class="text-xl font-semibold flex items-center"
+            ><i class="bx bx-home-circle mr-[4px] text-2xl"></i>Home</a
+          >
+          <a href="Delivery.html" class="text-xl font-semibold" target="_blank"
+            ><i class="bx bx-scooter-delivery mr-[4px] text-2xl"></i>Delivery</a
+          >
+          <a href="#" class="text-xl font-semibold"
+            ><i class="bx bx-wallet-note mr-[4px] text-2xl"></i>Pricing</a
+          >
+          <a href="#" class="text-xl font-semibold"
+            ><i class="bx bx-message-circle-question-mark mr-[4px] text-2xl"></i
+            >FAQs</a
+          >
+          <a href="#" class="text-xl font-semibold"
+            ><i class="bx bx-headphone-mic mr-[4px] text-2xl"></i>Contact</a
+          >
+        </ul>
+      </div>
 
-          <div>
-            
-          </div>
+      <div></div>
     </aside>
 
     <!-- Hero Section -->
-    <section class="grid md:grid-cols-2 items-center lg:max-w-[90vw] mx-auto">
+    <section
+      class="grid md:grid-cols-2 items-center lg:max-w-[90vw] mx-auto relative"
+    >
+      <!-- floating design  -->
+      <div
+        class="absolute bg-purple-600/30 p-20 rounded-full left-20 lg:left-80 animate-bounce blur-lg"
+      ></div>
+
       <div class="">
         <p class="text-purple-600 mb-[10px] mt-10 lg:mt-0">
           100% Fresh and Healthy
@@ -453,7 +497,6 @@
 
       <h2 class="text-center mt-[50px] font-bold text-xl">Buy a gift card</h2>
 
-
       <!-- Buy a gift card -->
       <div
         class="grid gap-[50px] md:grid-cols-2 mt-[30px] max-w-[90vw] mx-auto"
@@ -513,70 +556,72 @@
           </ul>
 
           <div>
-          <form action="#">
-            <div class="mt-[30px]">
-              <label for="recipient-email" class="font-semibold"
-                >Who should we send it to?</label
+            <form action="#">
+              <div class="mt-[30px]">
+                <label for="recipient-email" class="font-semibold"
+                  >Who should we send it to?</label
+                >
+                <br />
+                <input
+                  type="email"
+                  id="recipient-email"
+                  name="recipient-email"
+                  placeholder="Enter email address"
+                  required
+                  class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+                />
+              </div>
+
+              <div class="mt-[20px]">
+                <label for="sender-name" class="font-semibold">Your name</label>
+                <br />
+                <input
+                  type="text"
+                  id="sender-name"
+                  name="sender-name"
+                  placeholder="Enter your name"
+                  required
+                  class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+                />
+              </div>
+
+              <div class="mt-[20px]">
+                <label for="sender-email" class="font-semibold"
+                  >Your email</label
+                >
+                <br />
+                <input
+                  type="email"
+                  id="sender-email"
+                  name="sender-email"
+                  placeholder="Enter your email address"
+                  required
+                  class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+                />
+              </div>
+
+              <div class="mt-[20px]">
+                <label for="message" class="font-semibold"
+                  >Add a personal message (optional)</label
+                >
+                <br />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  cols="50"
+                  placeholder="I hope you'll enjoy this delicious gift! Happy cooking!.."
+                  class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="bg-purple-600 text-white p-[10px] w-full rounded-[5px] mt-[20px] cursor-pointer"
               >
-              <br />
-              <input
-                type="email"
-                id="recipient-email"
-                name="recipient-email"
-                placeholder="Enter email address"
-                required
-                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
-              />
-            </div>
-
-            <div class="mt-[20px]">
-              <label for="sender-name" class="font-semibold">Your name</label>
-              <br />
-              <input
-                type="text"
-                id="sender-name"
-                name="sender-name"
-                placeholder="Enter your name"
-                required
-                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
-              />
-            </div>
-
-            <div class="mt-[20px]">
-              <label for="sender-email" class="font-semibold">Your email</label>
-              <br />
-              <input
-                type="email"
-                id="sender-email"
-                name="sender-email"
-                placeholder="Enter your email address"
-                required
-                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
-              />
-            </div>
-
-            <div class="mt-[20px]">
-              <label for="message" class="font-semibold"
-                >Add a personal message (optional)</label
-              >
-              <br />
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                cols="50"
-                placeholder="I hope you'll enjoy this delicious gift! Happy cooking!.."
-                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              class="bg-purple-600 text-white p-[10px] w-full rounded-[5px] mt-[20px] cursor-pointer"
-            >
-              Go to checkout
-            </button>
-          </form>
+                Go to checkout
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -646,7 +691,8 @@
           required
           class="border-1 rounded-[5px] p-[10px] mt-[20px]"
         />
-        <button id="signup-button"
+        <button
+          id="signup-button"
           class="bg-purple-600 p-[10px] border-1 rounded-[5px] text-white font-bold cursor-pointer mt-[20px] min-w-20"
         >
           Sign up
@@ -654,15 +700,31 @@
 
         <!-- Sign-up Message -->
 
-        <div id="message-box" class="fixed top-8 left-1/2 -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 transition-all duration-500 transform opacity-0 scale-95 hidden">
+        <div
+          id="message-box"
+          class="fixed top-8 left-1/2 -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 transition-all duration-500 transform opacity-0 scale-95 hidden"
+        >
           <div class="flex items-center justify-between">
             <p id="message-text" class="text-white font-semibold"></p>
-            <button id="close-button" class="ml-4 text-white opacity-70 hover:opacity-100 transition-opacity">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+            <button
+              id="close-button"
+              class="ml-4 text-white opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
-
           </div>
         </div>
       </div>
@@ -703,11 +765,11 @@
       &copy; 2024 HealthyWithEre. All rights reserved.
     </p>
 
-  
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="HealthyWithEre.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
