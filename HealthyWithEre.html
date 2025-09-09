@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy with Ere</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <!-- fontawesome 4.7.0  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- Responsiveness in session -->
+  <body class="bg-white p-3 lg:p-0">
+    <!-- Navbar -->
+    <div class="w-full font-sans text-gray-900">
+      <!-- desktop navigation  -->
+      <nav
+        class="hidden lg:flex items-center justify-between px-24 py-8 max-w-screen-xl mx-auto"
+      >
+        <a href="HealthyWithEre.html" class="text-4xl font-bold tracking-wide"
+          >HealthyWith<span class="text-purple-600">Ere</span></a
+        >
+        <ul class="flex items-center gap-[30px]">
+          <li
+            class="font-medium text-purple-600 cursor-pointer hover:text-black"
+          >
+            <a href="HealthyWithEre.html"></a>Home
+          </li>
+          <li class="cursor-pointer hover:text-purple-600 hover:font-medium">
+            <a href="Delivery.html" target="_blank"></a>Delivery
+          </li>
+          <li class="cursor-pointer hover:text-purple-600 hover:font-medium">
+            <a href=""></a>Pricing
+          </li>
+          <li class="cursor-pointer hover:text-purple-600 hover:font-medium">
+            <a href=""></a>FAQs
+          </li>
+          <li class="cursor-pointer hover:text-purple-600 hover:font-medium">
+            <a href=""></a>Contact
+          </li>
+        </ul>
+        <button
+          class="p-[10px] bg-purple-600 rounded-lg w-[150px] cursor-pointer text-white font-medium hover:text-black hover:font-medium"
+        >
+          Get Started
+        </button>
+      </nav>
+
+      <!-- mobile nav  -->
+      <nav class="flex lg:hidden justify-between items-center">
+        <!-- logo  -->
+        <a
+          href="HealthyWithEre.html"
+          class="text-2xl md:text-3xl font-bold tracking-wide"
+          >HealthyWith<span class="text-purple-600">Ere</span></a
+        >
+
+        <!-- menu button  -->
+    <i class="fa fa-bars open-sidenav" aria-label="Open menu" aria-hidden="true" id="menu-button" aria-controls="sidenav"></i>
+    </nav>
+    </div>
+
+    <!-- SideNav Mobile -->
+    <aside id="sidenav" class="sidebar fixed top-0 right-0 w-64 h-full bg-purple-600 text-white shadow-2xl z-50 flex flex-col pt-16">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Menu <span><i id="close-sidenav-button" class='bx  bx-x-circle ml-[5px] text-2xl absoulte top-4 right-4 p-2 rounded-lg text-white opacity-70 hover:opacity-100 transition-opacity cursor-pointer ml-[90px]'></i></span></h2>
+        <input type="text" id="sidenavSearch" name="sidenavSearch" placeholder="Search..." class="bg-purple-400 w-full p-[5px] rounded-[10px] placeholder-white border-0 outline-0"> 
+        <ul class="mt-6 flex flex-col gap-8">
+            <a href="HealthyWithEre.html" class="text-xl font-semibold"><i class='bx  bx-home-circle mr-[4px] text-2xl'></i>Home</a>
+            <a href="Delivery.html" class="text-xl font-semibold" target="_blank"><i class='bx  bx-scooter-delivery mr-[4px] text-2xl'></i>Delivery</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-wallet-note mr-[4px] text-2xl'></i>Pricing</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-message-circle-question-mark mr-[4px] text-2xl'></i>FAQs</a>
+            <a href="#" class="text-xl font-semibold"><i class='bx  bx-headphone-mic mr-[4px] text-2xl'></i>Contact</a>
+           </ul>
+          </div>
+
+          <div>
+            
+          </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="grid md:grid-cols-2 items-center lg:max-w-[90vw] mx-auto">
+      <div class="">
+        <p class="text-purple-600 mb-[10px] mt-10 lg:mt-0">
+          100% Fresh and Healthy
+        </p>
+        <h1 class="text-4xl mb-[20px] font-semibold max-w-lg">
+          Healthy Lifestyle is your only
+          <span class="text-purple-600 block">unfair advantage</span>
+        </h1>
+        <p class="mb-[20px] max-w-lg">
+          We provide you with the best and healthy meals that will keep you
+          going throughout the day. Our meals are prepared by professional chefs
+          and delivered to your doorstep.
+        </p>
+        <button
+          class="p-[10px] cursor-pointer duration-500 ease-in bg-purple-600 rounded-lg w-[150px] text-white hover:text-black hover:border-2 hover:border-solid hover:border-black hover:bg-transparent"
+        >
+          Get Started
+        </button>
+        <button
+          class="p-[10px] cursor-pointer duration-600 ease-in rounded-lg w-[150px] text-black ml-[20px] border-2 border-solid border-black hover:bg-purple-600 hover:text-white hover:border-none"
+        >
+          Explore Menu
+        </button>
+      </div>
+
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="images/food.png"
+          alt="Salad Bowl"
+          class="mt-[50px]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        />
+      </div>
+    </section>
+
+    <!-- Filler Section -->
+    <section class="bg-purple-600 text-center">
+      <p class="text-center text-white text-lg pt-8 pb-4">How to order</p>
+      <h2 class="text-center text-white font-bold text-3xl pb-4">
+        It's as easy as this.
+      </h2>
+      <div
+        class="grid gap-[50px] md:grid-cols-3 items-center lg:max-w-[90vw] mx-auto p-8"
+      >
+        <div>
+          <img
+            src="images/location.png"
+            alt="Location"
+            width="100px"
+            height="100px"
+            class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
+          />
+          <p class="text-white font-bold">Tell us where you are</p>
+          <p class="text-white">
+            We'll show you stores and restaurantd nearby you can order from.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="images/veg salad.png"
+            alt="Veg Salad"
+            width="100px"
+            height="100px"
+            class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
+          />
+          <p class="text-white font-bold">Find what you want</p>
+          <p class="text-white">
+            Search for items or dishes, businessesnor cuisines.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="images/delivery-man.png"
+            alt="Delivery man"
+            width="100px"
+            height="100px"
+            class="w-[100px] h-[100px] mx-auto mb-[30px] cursor-pointer"
+          />
+          <p class="text-white font-bold">Order for delivery or collection</p>
+          <p class="text-white">We'll update you on your order's progress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="lg:max-w-[90vw] mx-auto">
+      <p class="text-center mt-[10px] text-lg lg:text-3xl font-bold">
+        Menu for Sep 06 - Nov 03
+      </p>
+      <table
+        class="table-auto w-full text-center mt-[30px] border-1 border-solid rounded-bl-[20px] cursor-pointer"
+      >
+        <tr>
+          <th class="p-[15px] bg-purple-600 w-[25%]">Sep 06-12</th>
+          <th class="p-[15px] w-[25%] hover:bg-purple-300">Sep 13-19</th>
+          <th class="border-1 p-[15px] w-[25%] hover:bg-purple-300">
+            Sep 20-26
+          </th>
+          <th class="border-1 p-[15px] w-[25%] hover:bg-purple-300">
+            Sep 27-03
+          </th>
+        </tr>
+      </table>
+
+      <div class="grid gap-[30px] mt-[50px] md:grid-cols-3">
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/King Prawn curry.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px] mt-[10px]"
+          >
+            PREMIUM TWIST
+          </p>
+          <p class="mt-[5px] text-lg">Thai Green Style King Prawn Curry</p>
+          <p class="mt-[5px]">
+            with Oven-Ready Spring Rolls, Jasmine Rice and Peanuts
+          </p>
+          <p class="font-semibold mt-[30px]">
+            30 min
+            <span class="text-gray-500 text-sm"
+              >| Medium Spice - Pescatarian</span
+            >
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Beef Lasagne.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            BACK TO SCHOOL
+          </p>
+          <p class="mt-[5px] text-lg">Pulled Beef Ragu Lasagne</p>
+          <p class="mt-[5px]">
+            with Garlic Bread, Béchamel, Cheese and Balsamic Wild Rocket Salad
+          </p>
+          <p class="font-semibold mt-[30px]">
+            1 hour <span class="text-gray-500 text-sm">| New</span>
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Chicken Bao.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            A TASTE OF INDIA
+          </p>
+          <p class="mt-[5px] text-lg">Curried Fried Chicken Bao</p>
+          <p class="mt-[5px]">
+            with Spring Rolls, Mango Chutney and Cucumber Raita Style Slaw
+          </p>
+          <p class="font-semibold mt-[30px]">
+            35 min
+            <span class="text-gray-500 text-sm">| Eggs(s) - not included</span>
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Veggie Burger.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            PREMIUM TWIST
+          </p>
+          <p class="mt-[5px] text-lg">Asian Inspired Veggie Burger and Chips</p>
+          <p class="mt-[5px]">
+            with Corn Cobs, Harissa Relish, Mint Yoghurt and Salad
+          </p>
+          <p class="font-semibold mt-[30px]">
+            40 min
+            <span class="text-gray-500 text-sm"
+              >| Veggie - Medium Spice - New</span
+            >
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Noddle Soup.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-green-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            BESTSELLER
+          </p>
+          <p class="mt-[5px] text-lg">Coconut Veggie Laksa Noodle Soup</p>
+          <p class="mt-[5px]">with Stir-Fried Veg and Peanuts</p>
+          <p class="font-semibold mt-[55px]">
+            30 min
+            <span class="text-gray-500 text-sm"
+              >| Medium Spice - Calorie Smart</span
+            >
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Sea Bream.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            PREMIUM INGREDIENT
+          </p>
+          <p class="mt-[5px] text-lg">Teriyaki Sea Bream and Pineapple Salsa</p>
+          <p class="mt-[5px]">
+            with Black Sesame, Coconut Rice, Tenderstem® and Young Pea Pods
+          </p>
+          <p class="font-semibold mt-[30px]">
+            40 min
+            <span class="text-gray-500 text-sm"
+              >| Pescatarian - Calories Smart</span
+            >
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/King Prawn Linguine.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-green-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            DOUBLE PROTEIN
+          </p>
+          <p class="mt-[5px] text-lg">Creamy Crab and King Prawn Linguine</p>
+          <p class="mt-[5px]">with Lemon, Chives, Flaked Almonds and Rocket</p>
+          <p class="font-semibold mt-[30px]">
+            30 min
+            <span class="text-gray-500 text-sm">
+              | High Protein - Pescatarian</span
+            >
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Steak Sirloin.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-gray-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            PREMIUM INGREDIENT
+          </p>
+          <p class="mt-[5px] text-lg">Korean 21 Day Aged Sirloin Steak</p>
+          <p class="mt-[5px]">
+            with Roast Potatoes, Spicy Mayo, Sesame Green Beans and Tenderstem
+          </p>
+          <p class="font-semibold mt-[30px]">
+            40 min <span class="text-gray-500 text-sm">| High Protein</span>
+          </p>
+        </div>
+
+        <div
+          class="border-1 border-solid p-[10px] rounded-[5px] hover:shadow-lg cursor-pointer"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+        >
+          <img
+            src="images/Lamb Steak.webp"
+            alt="King prawn curry"
+            class="rounded-[5px]"
+          />
+          <p
+            class="mt-[10px] bg-purple-600 text-white text-[12px] font-semibold w-fit px-2 py-1 rounded-[5px]"
+          >
+            PREMIUM INGREDIENT
+          </p>
+          <p class="mt-[5px] text-lg">Lamb Steak in Cheesy Leek Sauce</p>
+          <p class="mt-[5px]">
+            with Pesto Greens, Roasted Potatoes and Fresh Parsley Gremolata
+          </p>
+          <p class="font-semibold mt-[30px]">
+            45 min <span class="text-gray-500 text-sm">| High Protein</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift card Section -->
+    <section class="mt-4 lg:mt-8">
+      <div
+        class="bg-purple-600 flex flex-col items-center min-h-80 justify-center"
+      >
+        <h2 class="text-center text-3xl text-white font-semibold">
+          Give the gift of <br />
+          <span>home-cooked meals</span>
+        </h2>
+        <p class="text-center text-white mt-[20px]">
+          We've made gifting easy, so you can focus on spoiling your family and
+          friends
+        </p>
+        <button
+          class="bg-white mt-[20px] p-[10px] rounded-[5px] border-1 border-white cursor-pointer"
+        >
+          Buy gift card
+        </button>
+        <button
+          class="bg-transparent mt-[20px] p-[10px] rounded-[5px] border-1 border-white cursor-pointer text-white"
+        >
+          Redeem gift card
+        </button>
+      </div>
+
+      <h2 class="text-center mt-[50px] font-bold text-xl">Buy a gift card</h2>
+
+
+      <!-- Buy a gift card -->
+      <div
+        class="grid gap-[50px] md:grid-cols-2 mt-[30px] max-w-[90vw] mx-auto"
+        class="grid grid-cols-3 gap-[50px] md:grid-cols-2 sm:grid-cols-1 mt-[30px]"
+      >
+        <div>
+          <p
+            class="bg-purple-600 mt-[30px] lg:max-w-md min-h-48 rounded-[10px] text-4xl text-white font-bold cursor-pointer flex items-center justify-center"
+          >
+            £36.48
+          </p>
+        </div>
+
+        <div class="mt-[30px]">
+          <p class="font-semibold">How much would you like to gift?</p>
+          <p>
+            Recipients can use your gift towards any meal plan and recipes of
+            their choice.
+          </p>
+
+          <div class="mt-[15px] grid grid-cols-2">
+            <div
+              class="bg-gray-300 p-[5px] w-[150px] rounded-[5px] font-semibold border-1 text-center cursor-pointer"
+            >
+              <p>£36.48</p>
+            </div>
+
+            <div
+              class="p-[5px] w-[150px] rounded-[5px] font-semibold border-1 text-center cursor-pointer"
+            >
+              <p>£42.48</p>
+            </div>
+
+            <div
+              class="p-[5px] w-[150px] rounded-[5px] font-semibold border-1 text-center mt-[10px] cursor-pointer"
+            >
+              <p>£49.48</p>
+            </div>
+
+            <div
+              class="p-[5px] w-[150px] rounded-[5px] font-semibold border-1 text-center mt-[10px] cursor-pointer"
+            >
+              <p>£50.48</p>
+            </div>
+          </div>
+
+          <ul class="list-disc mt-[20px]">
+            <li>£36.48 feeds 2 people with 3 meals a week</li>
+            <li>
+              We'll email your gift to the recipient, as well as a printable
+              version of the gift card to your inbox
+            </li>
+            <li>
+              Gift cards are subject to our
+              <a href="#" class="underline">Gift Card Terms.</a>
+            </li>
+          </ul>
+
+          <div>
+          <form action="#">
+            <div class="mt-[30px]">
+              <label for="recipient-email" class="font-semibold"
+                >Who should we send it to?</label
+              >
+              <br />
+              <input
+                type="email"
+                id="recipient-email"
+                name="recipient-email"
+                placeholder="Enter email address"
+                required
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+              />
+            </div>
+
+            <div class="mt-[20px]">
+              <label for="sender-name" class="font-semibold">Your name</label>
+              <br />
+              <input
+                type="text"
+                id="sender-name"
+                name="sender-name"
+                placeholder="Enter your name"
+                required
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+              />
+            </div>
+
+            <div class="mt-[20px]">
+              <label for="sender-email" class="font-semibold">Your email</label>
+              <br />
+              <input
+                type="email"
+                id="sender-email"
+                name="sender-email"
+                placeholder="Enter your email address"
+                required
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+              />
+            </div>
+
+            <div class="mt-[20px]">
+              <label for="message" class="font-semibold"
+                >Add a personal message (optional)</label
+              >
+              <br />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                placeholder="I hope you'll enjoy this delicious gift! Happy cooking!.."
+                class="border-1 border-solid w-full p-[10px] rounded-[5px] mt-[10px]"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-purple-600 text-white p-[10px] w-full rounded-[5px] mt-[20px] cursor-pointer"
+            >
+              Go to checkout
+            </button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us! -->
+    <section class="bg-purple-600 mt-[100px]">
+      <!-- <h2 class="text-center text-white font-bold">Why buy a HealthyWithEre gift card?</h2> -->
+      <div
+        class="mb-[10px] grid gap-[50px] p-8 lg:max-w-[90vw] mx-auto text-center md:grid-cols-3 bg-purple-600 text-white"
+      >
+        <div>
+          <img
+            src="images/fried-rice.png"
+            alt="Fried rice"
+            class="w-[200px] h-[200px] mx-auto"
+          />
+          <p class="mb-[10px] font-semibold cursor-pointer">Meals made easy</p>
+          <p>
+            Give the gift of simply delicious dinners with pre-measured
+            ingredients and step-by-step recipes delivered to their door.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="images/fresh.png"
+            alt="fresh food"
+            class="w-[200px] h-[200px] mx-auto"
+          />
+          <p class="mb-[10px] font-semibold cursor-pointer">Fresh flavours</p>
+          <p>
+            We pack each box with fresh, quality produce that brings
+            restaurant-quality meals to their kitchen.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="images/tasty.png"
+            alt="tasty food"
+            class="w-[200px] h-[200px] mx-auto"
+          />
+          <p class="mb-[10px] font-semibold cursor-pointer">
+            Their box, their way
+          </p>
+          <p>
+            Your recipient can choose from over 35 recipes every week and decide
+            when and where to receive them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white p-[50px]">
+      <h2 class="text-center font-bold text-2xl mb-[20px]">Not hungry yet?</h2>
+      <p class="text-center">
+        Get special offers, meals and news when you subscribe to our newsletter
+      </p>
+      <div class="flex justify-center items-center gap-[5px] mt-[20px]">
+        <input
+          id="email"
+          type="email"
+          autocomplete="email"
+          placeholder="Email"
+          required
+          class="border-1 rounded-[5px] p-[10px] mt-[20px]"
+        />
+        <button id="signup-button"
+          class="bg-purple-600 p-[10px] border-1 rounded-[5px] text-white font-bold cursor-pointer mt-[20px] min-w-20"
+        >
+          Sign up
+        </button>
+
+        <!-- Sign-up Message -->
+
+        <div id="message-box" class="fixed top-8 left-1/2 -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 transition-all duration-500 transform opacity-0 scale-95 hidden">
+          <div class="flex items-center justify-between">
+            <p id="message-text" class="text-white font-semibold"></p>
+            <button id="close-button" class="ml-4 text-white opacity-70 hover:opacity-100 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p class="lg:max-w-[90vw] mx-auto text-justify text-sm">
+      Next day delivery available to new customers when ordering your first
+      HelloFresh box by noon. Recipes must be selected by the stated cut-off
+      time or default meals will be sent. Available only for residents of UK,
+      Jersey, Guernsey and Isle of Man (excluding Scottish Highlands and
+      Islands). You'll be notified at checkout if next day delivery is
+      unavailable for any reason.This offer entitles you to one free add-on (as
+      stipulated by HelloFresh at our sole discretion in the menu selection
+      process) every time you order a HelloFresh box after voucher activation.
+      You will also receive a discount off your first box and following 4 boxes
+      (as communicated on the landing page, discount banner and wallet
+      post-checkout). Full discount must be redeemed within the first 42 days
+      from account creation [excluding surcharge recipes and, add-ons and
+      delivery charges]. Redemption deadline communicated in customer wallet
+      post-checkout. Free shipping honoured on first box. New customers and
+      existing customers who have cancelled for more than 52 weeks only. One
+      voucher per customer and household. You can select one item from the free
+      add-on menu following checkout with every weekly order. Cannot cater for
+      dietary requirements. In the event HelloFresh cannot supply a free add-on
+      gift for any reason, customer will need to contact HelloFresh Customer
+      Care via the methods listed on our website to receive a credit voucher.
+      Upon redemption, you'll be enrolled in a flexible rolling weekly
+      subscription. Valid for UK residents only (including Jersey, Guernsey &
+      Isle of Man), excluding Scottish Highlands and Islands. If you choose to
+      cancel your account at any time, this offer will automatically expire. By
+      redeeming this offer, you agree to these and our general Terms and
+      Conditions. HelloFresh reserves the right to amend or withdraw this offer
+      at our complete discretion with no prior notice or liability to you. See
+      website for full T&Cs.
+    </p>
+
+    <p class="text-center mt-[50px] mb-[20px] font-bold">
+      &copy; 2024 HealthyWithEre. All rights reserved.
+    </p>
+
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="HealthyWithEre.js"></script>
+  </body>
+</html>
